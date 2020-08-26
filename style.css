@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+.navitemcontainer{
+    display: flex;
+    list-style: none;
+    color: white;
+    font-family: 'muli';
+    margin-top: 10px;
+}
+
+.unsure{
+    padding-top: 30px;
+}
+.active{
+    
+    border-bottom: 1.5px solid #171267;
+    border-radius: 2px;
+}
+
+
+li > a{
+    text-decoration: none;
+    color: white;
+}
+.navitemcontainer > li{
+    margin-right: 40px;
+   
+}
+
+.hero{
+    text-align:center;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.navfadein{
+    background-color: rgba(108, 99, 255, 1);
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+main{
+    background: linear-gradient(#0F0C29, #302B63, #24243E);
+    height: 85vh;
+}
+
+.heromain{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.herotitle{
+    font-family: 'montserrat';
+    color: white;
+    font-size: 64px;
+    margin-top: 20px;
+}
+.infoleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins';
+    color: #b7b7b7;
+}
+
+.inforight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins';
+    color: #b7b7b7;
+}
+
+
+.heromain > img{
+    max-width: 30%
+}
+
+.inforight{
+   max-width: 20%;
+}
+
+.infoleft{
+    max-width: 20%;
+}
+
+.consultationbutton{
+    width: 35%;
+    margin: 0 auto;
+    border: 1.5px solid #6C63FF;
+    border-radius: 3px;
+    background-color: #ff000000;
+    padding: 5px;
+    letter-spacing: 2px;
+    color: white;
+    font-family: 'poppins';
+}
+
+.companylogo{
+    color: white;
+    font-family: 'poppins';
+    margin-left: 40px;
+
+}
+
+
+.services{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.servicestitle{
+    font-family: 'muli';
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+.servicecard{
+    background-color: #f5f5f5;
+    border: 1px solid #C2C2C2;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 2px 1px 6px 5px rgba(209,209,209,1);
+    -moz-box-shadow: 2px 1px 6px 5px rgba(209,209,209,1);
+    box-shadow: 2px 1px 6px 5px rgba(209,209,209,1);
+}
+.servicecard > h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'muli';
+}
+.servicecard > ul > li{
+    margin-bottom: 15px;
+}
+.servicecard > img{
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+.servicecard > ul{
+    list-style: none;
+    font-family: 'muli';
+    
+}
+
+
+.cardscontainer{
+    display: flex;
+    justify-content:space-evenly;
+}
+.servicecard > ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #6C63FF; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: 1em; /* Also needed for space (tweak if needed) */
+  }
+
+  .long{
+      height: 500px;
+  }
+
+
+  .price{
+      color: #7D76FE;
+      font-size: 48px;
+      font-family: 'poppins';
+      margin: 0 auto;
+  }
+
+  small{
+      color: black;
+      font-size: 15px;
+      font-family: 'muli';
+  }
+
+  .reviewcontainer{
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .reviews > h1{
+      text-align: center;
+      font-family: 'muli';
+      font-size: 35px;
+  }
+
+  .reviewstitle{
+      margin-bottom: 50px;
+  }
+
+  .reviews{
+      background-color: #F5F5F5;
+      height: 400px; 
+      margin-bottom: 30px;
+  }
+
+  .cardcontent{
+      background-color: #6C63FF;
+      border-radius: 7px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'muli';
+      color: white;
+      margin-bottom: 7px;
+      -webkit-box-shadow: 2px 1px 6px 5px rgba(209,209,209,1);
+      -moz-box-shadow: 2px 1px 6px 5px rgba(209,209,209,1);
+      box-shadow: 2px 1px 6px 5px rgba(209,209,209,1);
+  }
+  .cardcontent > p{
+      margin-bottom: 10px;
+  }
+
+  .reviewcard{
+      width: 30%;
+      
+  }
+
+  .starcontainer > img{
+      margin-right: 10px;
+  }
+
+  .reviewerinfo{
+      display: flex;
+     
+      align-items: center;
+      font-family: 'muli';
+  }
+
+  .reviewerinfo > img{
+      margin-right: 5px;
+  }
+
+  .contact{
+      margin-left: 50px;
+      margin-right: 50px;
+      height: 400px;;
+      font-family: 'muli';
+  }
+  .contact > h1{
+      text-align: center;
+  }
+  .phone{
+      display: flex;
+      align-items: Center;
+  }
+  .phone > img{
+      margin-right: 10px;
+  }
+  .email > img{
+      margin-right: 10px;
+  }
+  .location > img{
+      margin-right: 10px;
+  }
+  .email{
+      display: flex;
+      align-items: Center;
+  }
+
+  .location{
+    display: flex;
+    align-items: Center;
+  }
+  
+
+  .sociallogos > img{
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .contactcontainer{
+      display: flex;
+      justify-content: space-evenly;
+      height: 350px;
+  }
+  .contact > h1{
+      font-family: 'muli';
+      font-size: 35px;
+      margin-bottom: 30px;
+  }
+
+  form{
+      display: flex;
+      flex-direction: column;
+      height: 75%;
+      justify-content: space-evenly;
+    
+  }
+
+  form > input{
+      border: 0;
+      border-bottom: 1.5px solid black;
+      font-family: 'muli';
+  }
+  .contactdetails{
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+  }
+
+  .sendbutton{
+      background-color: white;
+      border: 1px solid black;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: 'muli';
+  }
+
+  footer{
+      background-color: #010039;
+      display: flex;
+      color: white;
+      font-family: 'muli';
+      height: 40px;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .footerphone{
+      display: flex;
+
+      align-items: center;
+  }
+  .footerphone > img{
+      margin-right: 10px;
+      margin-left: 10px;
+  }
+  .footerphone > p{
+      margin-right: 40px;
+  }
+  .footeremail > img{
+      margin-right: 10px;
+  }
+
+  .footeremail{
+      display: flex;
+      align-items: center;
+  }
+
+  .contactinfofooter{
+      display: flex;
+  }
+  
+.copyright{
+    margin-right: 30px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .contactcontainer{
+        height: 300px;
+    }
+  }
+
+@media only screen and (max-width: 1120px) {
+    .servicecard > ul > li{
+        font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 965px) {
+    .servicecard > ul > li{
+        font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 920px) {
+    .servicecard > ul > li{
+        font-size: 13px;
+    }
+    .servicecard{
+        height: 350px;
+    }
+    .long{
+        height: 550px;
+    }
+    .cardcontent > p{
+        font-size: 14px;
+    }
+    .reviewer{
+        font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+      .reviews > h1{
+          font-size: 30px;
+      }
+  }
+
+  
+  @media only screen and (max-width: 930px) {
+    .infoleft > p{
+        font-size: 14px;
+    }
+    .inforight > p{
+        font-size: 14px;
+    }
+    .consultationbutton{
+        font-size: 12px;
+    }
+    .reviewer{
+        font-size: 12px;
+    }
+    .starcontainer > img{
+        margin-right: 5px;
+    }
+}
+
+
+  
+@media only screen and (max-width: 820px) {
+    header{
+        z-index:1;
+    }
+    .companylogo{
+        margin-left: 10px;
+    }
+    .servicestitle{
+        font-size: 30px;
+    }
+    .reviewcontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviews{
+        height: 100%;
+    }
+    .reviewcard{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .contactdetails{
+        font-size: 12px;
+    }
+    .contactform > input{
+        font-size: 12px;
+    }
+    .sendbutton{
+        font-size: 12px;
+    }
+    .cardscontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services{
+        height: 100%;
+    }
+    .servicecard{
+        width: 60%;
+        margin-bottom: 40px;
+        height: 100%;
+    }
+    .long{
+        height: 400px;
+    }
+    footer{
+        font-size: 12px;
+    }
+
+    .navitemcontainer{
+        flex-direction: column;
+        margin-top: 0;
+        color: white;
+    }
+    .hamburgermenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 30px;
+        
+        width: 40px;
+        margin-right: 20px;
+    }
+    .burger{
+        width: 40px;
+        height: 4px;
+        background-color: white;
+    }
+    .hamburgermenu :nth-child(2){
+        width: 30px;
+        margin: 0 auto;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .navitemcontainer{
+        background-color:  #6C63FF;
+        position:absolute;
+        right: 0px;
+        width: 100vw;
+        top: 0px;
+        z-index: -1;
+        text-align: center;
+        height: 500px;
+        justify-content: space-evenly;
+        font-size: 25px;
+        display: none;
+    }
+    .navitemcontainer > li{
+        margin: 0;
+        padding: 20px;
+        
+    }
+    .services{
+        height: 1300px;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .contactcontainer{
+        height: 100%;
+        display: block;
+    }
+    .contactdetails{
+        
+    }
+    .contact{
+        height: 100%;
+    }
+    .contactform{
+        margin-bottom: 20px;
+        height: 500px;
+    }
+    .sociallogos > img{
+        height: 18px;
+    }
+    .sociallogos{
+        margin-top: 10px;
+    }
+    .infoleft{
+        position: absolute;
+        top: 57%;
+        right: 60%;
+
+    }
+    .heromain > img{
+        position: absolute;
+        top: 30%;
+        max-width: 60%;
+    }
+
+    .inforight{
+        position: absolute;
+        top: 57%;
+        left: 60%;
+    }
+    main{
+        height: 95vh;
+    }
+    .hero{
+        justify-content: space-between;
+        height: 94%;
+    }
+    .herotitle{
+        font-size: 40px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .infoleft{
+        top: 53%;
+        max-width: 100%;
+        margin-left: 10px;
+    }
+    .inforight{
+        top: 53%;
+        max-width: 100%;
+        margin-right: 10px;
+    }
+    .heromain > img{
+        max-width: 50%;
+        top: 33%;
+    }
+    .herotitle{
+        font-size: 35px;
+        margin-top: 80px;
+    }
+    .consultationbutton{
+        width: 70%;
+    }
+    footer{
+        text-align: center;
+        font-size: 10px;
+    }
+    .copyright{
+        margin-right: 10px;
+    }
+    .footerphone > p{
+        margin-right: 10px;
+    }
+    .servicecard{
+        width: 80%;
+    }
+    .reviewcard{
+        width: 75%;
+    }
+
+}
+@media only screen and (max-width: 375px) {
+    .infoleft > p{
+        font-size: 12px;
+    }
+    .inforight > p{
+        font-size: 12px;
+    }
+    .contact > h1 {
+        font-size: 30px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 560px) {
+    .contact{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 350px) {
+    .infoleft > p{
+        font-size: 10px;
+    }
+    .inforight > p{
+        font-size: 10px;
+    }
+    .heromain > img{
+       
+    }
+    .herotitle{
+        margin-top: 50px;
+    }
+    .consultationbutton{
+       width: 75%;
+    }
+    nav{
+        
+    }
+    
+}
+
+@media only screen and (max-height: 650px) {
+    .infoleft > p{
+        font-size: 12px;
+    }
+    .inforight > p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .copyright{
+        display: none;
+    }
+    .contactinfofooter{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+}
